@@ -1,0 +1,57 @@
+html {
+    font-size: 100px
+}
+html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    background: #F3F5F7;
+    color: #555;
+    font-family:Heiti SC helvetice neue;
+}
+
+a, a:active, a:hover, a:visited, a:target {
+    color: #555
+}
+.main{
+    width: 100%;
+    height: auto;
+    max-width: 640px;
+    margin: 0 auto;
+}
+.main .con{
+    width: 100%;
+    margin: 0.2rem 0;
+    overflow: hidden;
+}
+.main .nav{
+    width: 0.75rem;
+    height: auto;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+/*.main .nav div{
+   !* height: 300%;*!
+}*/
+.main .nav a{
+    width: .75rem;
+    height: .46rem;
+    display: block;
+    line-height: .46rem;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.11rem;
+
+}
+
+.main .header{
+height: 0.43rem;
+line-height: 0.43rem;
+    text-align: center;
+    background: #fff;
+}

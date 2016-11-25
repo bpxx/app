@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>手机端app</title>
+    <meta name="apple-mobile-web-capable" content="yes">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="screen-orientation" content="portrait"><!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait"><!-- QQ强制竖屏 -->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/2.css">
+
+    <!--<script src="js/index.js"></script>-->
+    <script  type="text/javascript">
+        ~function(){
+            var desW=640;
+            var winW=document.documentElement.clientWidth;
+            if(winW>640) return;
+            document.documentElement.style.fontSize= winW/desW*100+'px';
+        }();
+    </script>
+</head>
+<body>
+<div class="main" id="main">
+    <header class="header">
+        首页
+    </header>
+    <div class="con">
+        <nav class="nav" id="nav">
+            <div>
+                <a href="###">首页</a>
+                <a href="###">新闻</a>
+                <a href="###">视频</a>
+                <a href="###">军事</a>
+                <a href="###">娱乐</a>
+                <a href="###">体育</a>
+                <a href="###">社会</a>
+                <a href="###">科技</a>
+                <a href="###">财经</a>
+                <a href="###">数码</a>
+                <a href="###">汽车</a>
+                <a href="###">游戏</a>
+                <a href="###">新闻</a>
+                <a href="###">视频</a>
+                <a href="###">军事</a>
+                <a href="###">娱乐</a>
+                <a href="###">体育</a>
+                <a href="###">社会</a>
+                <a href="###">科技</a>
+                <a href="###">财经</a>
+                <a href="###">数码</a>
+                <a href="###">汽车</a>
+                <a href="###">游戏</a>
+                <a href="###">新闻</a>
+                <a href="###">视频</a>
+                <a href="###">军事</a>
+                <a href="###">娱乐</a>
+                <a href="###">体育</a>
+                <a href="###">社会</a>
+                <a href="###">科技</a>
+                <a href="###">财经</a>
+                <a href="###">数码</a>
+                <a href="###">汽车</a>
+                <a href="###">游戏</a>
+            </div>
+        </nav>
+    </div>
+    <div style="clear: both"></div>
+    <header class="header">
+        <input type="text" style="width: 80%; height: 0.3rem">
+    </header>
+</div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/iscroll-5.1.3.min.js"></script>
+<script>
+
+//计算高度
+    ~function () {
+        var $content = $('#main'),
+            $nav=$('#nav');
+        function fn() {
+            var winH = document.documentElement.clientHeight || document.body.clientHeight;
+            $content.css('height', winH);
+            $nav.css('height', winH-40-43-43);
+        }
+        fn();
+        $(window).on('resize', fn);
+
+        new IScroll("#nav", {
+            fadeScrollbars: true,
+            mouseWheel: true,
+            scrollbars: false,/*滚动条*/
+            bounce: true,
+            bounceTime: 1200
+        });
+
+    }();
+</script>
+</html>
